@@ -11,7 +11,6 @@ interface FetchResponse<T>{
 
 
 const useData = <T>(endpoint:string)=>{
-    console.log("Isme Aaya ", endpoint)
     const [data, setdata] = useState<T[]>([]);
     const [error, setError] = useState("");
     const [isLoading, setLoading] = useState(false)
